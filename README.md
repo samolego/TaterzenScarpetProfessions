@@ -5,12 +5,13 @@ Professions for [Taterzens](https://github.com/samolego/Taterzens) powered by [S
 ## How-to
 
 0. Install fabric-carpet and taterzens mods.
-1. Download the script professions you want and put them in `world/scripts`
-2. Run the server.
-3. Make sure the script is loaded (`/script load <script name>`). (To autoload the scripts, use `/carpet setDefault scriptsAutoload true`)
-4. Give taterzen the `taterzens:scarpet_profession` (`/npc edit professions add taterzens:scarpet_profession`).
-5. Set the scarpet traits if needed (`/trait scarpet add <trait name>`).
-6. Enjoy and modify scripts to your needs.
+1.  * download the script professions you want and put them in `world/scripts`
+    * use `/carpet scriptsAppStore samolego/TaterzenScarpetProfessions/contents/scripts`, followed by `/script download <script to install>`
+3. Run the server.
+4. Make sure the script is loaded (`/script load <script name>`). (To autoload the scripts, use `/carpet setDefault scriptsAutoload true`)
+5. Give taterzen the `taterzens:scarpet_profession` (`/npc edit professions add taterzens:scarpet_profession`).
+6. Set the scarpet traits if needed (`/trait scarpet add <trait name>`).
+7. Enjoy and modify scripts to your needs.
 
 ## Developers
 
