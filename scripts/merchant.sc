@@ -1,8 +1,9 @@
 // Merchant script
 // Makes taterzen exchange (barter for) items, specified
-// in `global_item_map`
+// in `global_item_map`.
+// Taterzen must have a `merchant` trait (`/trait scarpet add merchant`)
 //
-// v1.0.0
+// v1.1.0
 // author: samo_lego
 
 
@@ -11,8 +12,9 @@ __config() -> {
   'requires' -> {
     'carpet' -> '>=1.4.33',
     'minecraft' -> '>=1.17',
-    'taterzens' -> '1.4.3'
-  }
+    'taterzens' -> '>=1.6.0'
+  },
+  'stay_loaded' -> true
 };
 
 // Item conversion map
@@ -35,7 +37,12 @@ global_item_map = {
 
 
 // Event function
-__on_taterzen_tries_pickup(taterzen, item) -> (
+__on_taterzen_tries_pickup(taterzen, traits, item) -> (
+    // Only execute if taterzen has 'merchant' trait
+    if( (traits ~ 'merchant' == null),
+        return();
+    );
+
     // Get the item id of the 'item'
     [thrown_item, thrown_size, _id] = item ~ 'item';
 
