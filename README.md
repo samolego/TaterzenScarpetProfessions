@@ -39,7 +39,7 @@ if( (traits ~ 'merchant' == null),
 
 ## Available events
 
-See [github source page](https://github.com/samolego/Taterzens/blob/master/fabric/src/main/java/org/samo_lego/taterzens/compatibility/carpet/ScarpetProfession.java).
+See [github source page](https://github.com/samolego/Taterzens/blob/master/fabric/src/main/java/org/samo_lego/taterzens/fabric/compatibility/carpet/ScarpetProfession.java).
 All events start with `__on_<event name>`.
 
 You can also use the events below to add them in [IDEA highlighting](https://github.com/gnembon/fabric-carpet/blob/master/docs/scarpet/resources/editors/idea/Idea.md).
